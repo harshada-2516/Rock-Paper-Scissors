@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🪨📄✂️Rock Paper Scissors</h1>
+
+    <!-- Dark Mode Button -->
+    <button id="darkBtn">🌙 Dark Mode</button>
+
+    <!-- Countdown -->
+    <div id="countdown"></div>
+
+    <!-- Player & Computer Hands -->
+    <div id="battle">
+
+        <div class="choiceBox">
+            <h3>You</h3>
+            <div id="playerHand">❔</div>
+        </div>
+
+        <div class="choiceBox">
+            <h3>Computer</h3>
+            <div id="computerHand">❔</div>
+        </div>
+
+    </div>
+
+    <!-- Game Buttons -->
+    <div class="buttons">
+
+        <button onclick="playGame('Stone')">
+            🪨
+            <br>
+            Stone
+        </button>
+
+        <button onclick="playGame('Paper')">
+            📄
+            <br>
+            Paper
+        </button>
+
+        <button onclick="playGame('Scissors')">
+            ✂️
+            <br>
+            Scissors
+        </button>
+
+    </div>
+
+    <!-- Result -->
+    <div id="result">
+        Choose your move!
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="score">
+
+        <h2>🏆 Score Board</h2>
+
+        <p>
+            🎉 Wins :
+            <span id="win">0</span>
+        </p>
+
+        <p>
+            😢 Losses :
+            <span id="lose">0</span>
+        </p>
+
+        <p>
+            🤝 Ties :
+            <span id="tie">0</span>
+        </p>
+
+    </div>
+
+    <!-- Reset Button -->
+    <button id="resetBtn">
+        🔄 Reset Score
+    </button>
+
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
